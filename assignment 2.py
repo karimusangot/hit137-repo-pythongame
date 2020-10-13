@@ -16,7 +16,7 @@ t.hideturtle()
 # TURTLE 1
 t1 = Turtle()
 t1.pensize(5)
-t1.speed(0)
+t1.speed(10)
 t1.color("blue","orange")
 t1.shape("turtle")
 t1.up()
@@ -61,7 +61,7 @@ t1.pd()
 
 # TURTLE 2
 t2 = Turtle()
-t2.speed(0)
+t2.speed(4)
 t2.color("orange")
 t2.shape("turtle")
 t2.up()
@@ -71,7 +71,7 @@ t2.pd()
 
 # TURTLE 3
 t3 = Turtle()
-t3.speed(0)
+t3.speed(4)
 t3.color("light green")
 t3.shape("turtle")
 t3.up()
@@ -82,7 +82,7 @@ t3.pd()
 # TURTLE 4
 t4 = Turtle()
 t4.pensize(5)
-t4.speed(0)
+t4.speed(10)
 t4.color("purple","light green")
 t4.shape("turtle")
 t4.up()
@@ -133,7 +133,7 @@ t4.pd()
 
 # TURTLE 5
 t5 = Turtle()
-t5.speed(0)
+t5.speed(4)
 t5.pensize(5)
 t5.color("purple")
 t5.shape("turtle")
@@ -144,7 +144,7 @@ t5.rt(90)
 
 # TURTLE 6
 t6 = Turtle()
-t6.speed(0)
+t6.speed(4)
 t6.color("light green")
 t6.shape("turtle")
 t6.up()
@@ -154,7 +154,7 @@ t6.rt(90)
 
 # TURTLE 7
 t7 = Turtle()
-t7.speed(0)
+t7.speed(4)
 t7.color("orange")
 t7.shape("turtle")
 t7.up()
@@ -164,7 +164,7 @@ t7.rt(90)
 
 # TURTLE 8
 t8 = Turtle()
-t8.speed(0)
+t8.speed(4)
 t8.pensize(5)
 t8.color("blue")
 t8.shape("turtle")
@@ -175,7 +175,7 @@ t8.rt(90)
 
 # TURTLE 9
 t9 = Turtle()
-t9.speed(0)
+t9.speed(4)
 t9.pensize(5)
 t9.color("purple")
 t9.shape("turtle")
@@ -186,7 +186,7 @@ t9.rt(180)
 
 # TURTLE 10
 t10 = Turtle()
-t10.speed(0)
+t10.speed(4)
 t10.color("light green")
 t10.shape("turtle")
 t10.up()
@@ -196,7 +196,7 @@ t10.rt(180)
 
 # TURTLE 2
 t11 = Turtle()
-t11.speed(0)
+t11.speed(4)
 t11.color("orange")
 t11.shape("turtle")
 t11.up()
@@ -206,7 +206,7 @@ t11.rt(180)
 
 # TURTLE 12
 t12 = Turtle()
-t12.speed(0)
+t12.speed(4)
 t12.pensize(5)
 t12.color("blue")
 t12.shape("turtle")
@@ -217,7 +217,7 @@ t12.rt(180)
 
 # TURTLE 13
 t13 = Turtle()
-t13.speed(0)
+t13.speed(4)
 t13.pensize(5)
 t13.color("purple")
 t13.shape("turtle")
@@ -228,7 +228,7 @@ t13.lt(90)
 
 # TURTLE 14
 t14 = Turtle()
-t14.speed(0)
+t14.speed(4)
 t14.color("light green")
 t14.shape("turtle")
 t14.up()
@@ -238,7 +238,7 @@ t14.lt(90)
 
 # TURTLE 15
 t15 = Turtle()
-t15.speed(0)
+t15.speed(4)
 t15.color("orange")
 t15.shape("turtle")
 t15.up()
@@ -248,7 +248,7 @@ t15.lt(90)
 
 # TURTLE 16
 t16 = Turtle()
-t16.speed(0)
+t16.speed(4)
 t16.pensize(5)
 t16.color("blue")
 t16.shape("turtle")
@@ -278,3 +278,4 @@ for i in range(270):
     t16.fd(randint(1,5))
 
 window.exitonclick()
+window.mainloop()
