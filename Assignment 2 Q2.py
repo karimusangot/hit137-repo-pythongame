@@ -36,7 +36,7 @@ class Game:
                     self.rockets.append(Rocket(self, hero.x, hero.y))
 
             pygame.display.flip()
-            self.clock.tick(60)
+            self.clock.tick(60) #refresh rate
             self.screen.fill((255, 255, 222))
 
             for alien in self.aliens:
@@ -55,10 +55,8 @@ class Game:
         pygame.font.init()
         font = pygame.font.SysFont('Arial', 50)
         textsurface = font.render(text, False, (44, 0, 62))
-        self.screen.blit(textsurface, (110, 160))
-
-
-class Alien:
+      
+class Alien: #new alien class was created
     def __init__(self, game, x, y):
         self.x = x
         self.game = game
@@ -69,7 +67,7 @@ class Alien:
         pygame.draw.rect(self.game.screen,  
                          (104, 185, 70), 
                          pygame.Rect(self.x, self.y, self.size, self.size))
-        self.y += 0.05
+        self.y += 0.05 # pixel per frame
 
     def checkCollision(self, game):
         for rocket in game.rockets:
@@ -81,7 +79,7 @@ class Alien:
                 game.aliens.remove(self)
 
 
-class Hero:
+class Hero: # The hero is the character that controlled by the player
     def __init__(self, game, x, y):
         self.x = x
         self.game = game
@@ -93,7 +91,7 @@ class Hero:
                          pygame.Rect(self.x, self.y, 8, 5))
 
 
-class Generator:
+class Generator: # This class will be able to create more enemies
     def __init__(self, game):
         margin = 30  
         width = 50  
@@ -104,7 +102,7 @@ class Generator:
         # game.aliens.append(Alien(game, 280, 50))
 
 
-class Rocket:
+class Rocket: # This is the weapon of the hero
     def __init__(self, game, x, y):
         self.x = x
         self.y = y
